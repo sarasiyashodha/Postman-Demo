@@ -17,6 +17,39 @@
 				"url": "https://simple-books-api.click/status"
 			},
 			"response": []
+		},
+		{
+			"name": "Get books list",
+			"id": "a69cecfd-ee23-4d6e-9cef-a22486ff3f93",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://simple-books-api.click/books?type=fiction&limit=8",
+					"protocol": "https",
+					"host": [
+						"simple-books-api",
+						"click"
+					],
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "fiction"
+						},
+						{
+							"key": "limit",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
